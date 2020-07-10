@@ -1,0 +1,85 @@
+@import "navbar.css";
+@import "profilecard.css";
+@import "button.css";
+
+.container {
+    display:grid;
+    grid-template-columns: 40% 10% 40%;
+    grid-template-rows: 5em 4em auto auto 4m;
+    grid-template-areas: 
+    "hd hd hd"
+    "nv nv nv"
+    "main main sd"
+    "op op sd"
+    "ft ft ft";
+    justify-content: center;
+}
+
+.container2{
+    display:grid;
+    grid-template-columns: 40% 10% 40%;
+    grid-template-rows: 5em 4em auto auto 4m;
+    grid-template-areas: 
+    "hd hd hd"
+    "nv nv nv"
+    "main main sd"
+    "main main sd"
+    "ft ft ft";
+    justify-content: center;
+}
+
+h1{
+    padding-left: 20px;
+    font-size: 2rem;
+}
+
+nav{
+    grid-area: nv;
+    margin-top: 0.5%;
+}
+
+header{
+    grid-area: hd;
+    font-weight: bolder;
+    font-style: italic;
+    background-color:#4d8383;
+}
+   
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    grid-area: sd;
+    text-align: center; 
+}
+
+.image {
+    max-width:100%;
+    height:auto;
+}
+
+figcaption{
+    font-size: 10px;
+    font-style: oblique;
+}
+    
+summary{
+    grid-area: main;
+}
+
+.olderPosts{
+    grid-area: op;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    
+.footer{
+    grid-area: ft;
+    background-color:#183b3b;
+    margin-top: 50px;
+    font-size: 17px;
+}
+
+blockquote{
+    border-left: 10px solid;
+}
